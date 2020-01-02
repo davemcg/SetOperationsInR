@@ -1,9 +1,10 @@
-# SetOperationsInR
+# Set Operations In R
 
 A small set of commands which, in R, do some set operations.
 
 
-# Intersect Bed (equivalent of bedtools intersectBed)
+## Intersect Bed (rough equivalent of bedtools intersectBed)
+```
 # modified lightly from Dave Tang
 # https://rdrr.io/github/davetang/bedr/man/intersect_bed.html
 
@@ -14,3 +15,4 @@ intersect_bed <- function(a, b){
                   as.data.frame(b[subjectHits(hits)]))
     
 }
+```
